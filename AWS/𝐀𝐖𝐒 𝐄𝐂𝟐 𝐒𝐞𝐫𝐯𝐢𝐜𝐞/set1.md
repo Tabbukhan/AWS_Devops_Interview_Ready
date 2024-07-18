@@ -23,11 +23,12 @@ Create the AMI:
 ## How can you secure your EC2 instances, and what are some best practices for enhancing EC2 security?
 
 Answer: EC2 security best practices include:
-— Restricting network access using Security Groups and Network ACLs.
-— Applying IAM roles and policies for fine-grained access control.
-— Using key pairs for secure SSH/RDP access.
-— Regularly patching and updating your instances and applications.
-— Implementing monitoring and logging, such as CloudWatch and AWS Config, to track security events.
+
+- Restricting network access using Security Groups and Network ACLs.
+- Applying IAM roles and policies for fine-grained access control.
+- Using key pairs for secure SSH/RDP access.
+- Regularly patching and updating your instances and applications.
+- Implementing monitoring and logging, such as CloudWatch and AWS Config, to track security events.
 
 ## Explain Auto Scaling in EC2 and how it helps ensure application availability.
 
