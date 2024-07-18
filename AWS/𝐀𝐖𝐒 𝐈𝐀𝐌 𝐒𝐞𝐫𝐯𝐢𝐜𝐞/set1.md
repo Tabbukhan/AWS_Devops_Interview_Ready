@@ -111,6 +111,7 @@ In AWS, both IAM (Identity and Access Management) policies and permissions play 
    - **Granularity:** IAM policies can be very granular, allowing you to define fine-grained access controls based on specific actions, resources, and conditions.
 
    Example IAM Policy:
+   
          ```json
          {
            "Version": "2012-10-17",
@@ -129,7 +130,7 @@ In AWS, both IAM (Identity and Access Management) policies and permissions play 
          }
          ```
 
-2. **Permission:**
+3. **Permission:**
    - **Definition:** In the context of AWS IAM, a permission refers to the explicit authorization to perform a specific action on a specific AWS resource. Permissions are granted through IAM policies.
    - **Granularity:** Permissions are more granular than policies. They represent a single action on a single resource.
    - **Example:** If an IAM policy allows the action "s3:GetObject" on a specific S3 bucket, then the permission granted is the ability to get (read) objects from that bucket.
