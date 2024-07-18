@@ -44,9 +44,10 @@ Answer: In a DevOps environment, you can automate EC2 provisioning and configura
 
 ## Explain the concept of EC2 instance metadata and user data.
 
-Answer:
-— EC2 Instance Metadata: EC2 instances have metadata that provides information about the instance, such as instance ID, public IP address, and IAM role. This metadata can be accessed from within the instance.
-— User Data: User data is a script or data that can be passed to an EC2 instance during launch. It is often used to perform instance-specific configuration and customization.
+## Answer:
+
+- EC2 Instance Metadata: EC2 instances have metadata that provides information about the instance, such as instance ID, public IP address, and IAM role. This metadata can be accessed from within the instance.
+- User Data: User data is a script or data that can be passed to an EC2 instance during launch. It is often used to perform instance-specific configuration and customization.
 
 ## What is an EC2 placement group, and in what scenarios would you use it?
 
@@ -67,17 +68,19 @@ Answer: Spot Instances allow you to use spare AWS capacity at a significantly lo
 ## How does EC2 handle instance failures, and what strategies can you implement to ensure high availability for your applications?
 
 Answer: EC2 instances can fail, but you can enhance availability by:
-— Using Auto Scaling to automatically replace failed instances.
-— Distributing your application across multiple Availability Zones.
-— Implementing load balancing with Elastic Load Balancing (ELB).
-— Utilizing Elastic IP addresses and DNS solutions for failover.
+
+- Using Auto Scaling to automatically replace failed instances.
+- Distributing your application across multiple Availability Zones.
+- Implementing load balancing with Elastic Load Balancing (ELB).
+- Utilizing Elastic IP addresses and DNS solutions for failover.
 
 ## Explain the process of attaching and managing EBS volumes to EC2 instances.
 
 Answer: To attach an EBS volume to an EC2 instance, you:
-— Create an EBS volume and specify its size and type.
-— Attach the volume to the instance using the AWS Management Console, AWS CLI, or SDK.
-— Mount and format the volume on the instance to make it usable.
+
+- Create an EBS volume and specify its size and type.
+- Attach the volume to the instance using the AWS Management Console, AWS CLI, or SDK.
+- Mount and format the volume on the instance to make it usable.
 
 ## What are the differences between instance store (ephemeral) and EBS-backed EC2 instances, and when would you choose one over the other?
 
@@ -90,8 +93,9 @@ Answer: You can use Amazon CloudWatch to monitor EC2 instances and the underlyin
 ## Explain the concept of EC2 instance metadata and user data and how they are accessed within EC2 instances.
 
 Answer:
-— Instance Metadata: EC2 instance metadata is accessible from within an instance and provides information about the instance itself, such as instance ID, public IP, IAM role, and more. It can be accessed using a specific URL, like http://169.254.169.254/latest/meta-data/.
-— User Data: User data is user-provided information or scripts that can be passed to an EC2 instance during launch. It can be accessed from within the instance, typically as part of the instance initialization process.
+
+- Instance Metadata: EC2 instance metadata is accessible from within an instance and provides information about the instance itself, such as instance ID, public IP, IAM role, and more. It can be accessed using a specific URL, like http://169.254.169.254/latest/meta-data/.
+- User Data: User data is user-provided information or scripts that can be passed to an EC2 instance during launch. It can be accessed from within the instance, typically as part of the instance initialization process.
 
 ## How can you automate EC2 instance provisioning and scaling using AWS services like AWS Auto Scaling and AWS CloudFormation?
 
@@ -104,7 +108,8 @@ Answer: An EC2 placement group is a logical grouping of instances to influence h
 ## Explain how to implement an effective backup and disaster recovery strategy for EC2 instances and data.
 
 Answer: To implement an effective backup and disaster recovery strategy for EC2, you can:
-— Create regular EBS snapshots for data backup.
-— Utilize automated backup solutions like AWS Backup.
-— Replicate data across multiple Availability Zones.
-— Implement standby instances and recovery procedures to minimize downtime during a disaster.
+
+- Create regular EBS snapshots for data backup.
+- Utilize automated backup solutions like AWS Backup.
+- Replicate data across multiple Availability Zones.
+- Implement standby instances and recovery procedures to minimize downtime during a disaster.
