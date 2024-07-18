@@ -5,9 +5,9 @@ Answer: AWS IAM is a web service that allows you to control access to AWS servic
 ## Explain the concept of IAM users, groups, and roles in AWS IAM.
 
 Answer:
-— IAM Users: IAM users are individual entities with unique credentials used for authentication. Each user can have specific permissions assigned to them.
-— IAM Groups: IAM groups are collections of IAM users. Permissions are assigned to groups, and users added to those groups inherit the permissions.
-— IAM Roles: IAM roles are used by AWS resources or external services to obtain temporary security credentials. They do not have long-term access keys and are ideal for granting permissions to applications and services running on AWS.
+- IAM Users: IAM users are individual entities with unique credentials used for authentication. Each user can have specific permissions assigned to them.
+- IAM Groups: IAM groups are collections of IAM users. Permissions are assigned to groups, and users added to those groups inherit the permissions.
+- IAM Roles: IAM roles are used by AWS resources or external services to obtain temporary security credentials. They do not have long-term access keys and are ideal for granting permissions to applications and services running on AWS.
 
 ## What is the IAM policy in AWS, and how does it work?
 
@@ -20,8 +20,9 @@ Answer: An IAM policy is a named entity that defines permissions. An IAM policy 
 ## What are managed policies and inline policies in AWS IAM?
 
 Answer:
-— Managed Policies: Managed policies are standalone policies that you can attach to multiple users, groups, or roles. They are created and managed independently and can be shared across AWS accounts.
-— Inline Policies: Inline policies are policies that are embedded directly into a single user, group, or role. They are defined within the entity they are attached to and cannot be shared or reused outside of that entity.
+
+- Managed Policies: Managed policies are standalone policies that you can attach to multiple users, groups, or roles. They are created and managed independently and can be shared across AWS accounts.
+- Inline Policies: Inline policies are policies that are embedded directly into a single user, group, or role. They are defined within the entity they are attached to and cannot be shared or reused outside of that entity.
 
 ## What is the AWS IAM access key, and why is it used?
 
@@ -48,16 +49,18 @@ Certainly, here are some more interview questions related to AWS Identity and Ac
 ## What is the difference between authentication and authorization in the context of AWS IAM?
 
 Answer:
-— Authentication: Authentication is the process of verifying the identity of a user, service, or application. AWS IAM uses various methods, including user passwords, MFA, or access keys for authentication.
-— Authorization: Authorization is the process of granting or denying permissions to perform actions on AWS resources. AWS IAM policies define what actions are allowed or denied for authenticated entities.
+
+- Authentication: Authentication is the process of verifying the identity of a user, service, or application. AWS IAM uses various methods, including user passwords, MFA, or access keys for authentication.
+- Authorization: Authorization is the process of granting or denying permissions to perform actions on AWS resources. AWS IAM policies define what actions are allowed or denied for authenticated entities.
 
 ## How can you securely manage AWS access keys, and what best practices should be followed?
 
 Answer: Best practices for managing access keys include:
-— Regularly rotating access keys.
-— Limiting the use of long-term access keys in favor of temporary security credentials.
-— Using MFA to enhance the security of IAM users with access keys.
-— Ensuring that access keys are not hard-coded in code repositories.
+
+- Regularly rotating access keys.
+- Limiting the use of long-term access keys in favor of temporary security credentials.
+- Using MFA to enhance the security of IAM users with access keys.
+- Ensuring that access keys are not hard-coded in code repositories.
 
 ## Explain the use case for AWS IAM roles when interacting with AWS resources from EC2 instances.
 
@@ -82,16 +85,18 @@ Answer: AWS provides AWS CloudTrail for monitoring and logging IAM activities. B
 ## Explain the process of implementing a “least privilege” IAM policy for a DevOps team member.
 
 Answer: To implement a least privilege policy for a DevOps team member, you should:
-— Identify the specific tasks and resources they need access to.
-— Create a policy that grants only the necessary permissions.
-— Regularly review and update the policy to remove unnecessary permissions.
-— Use IAM groups to manage and assign policies to simplify policy management.
+
+- Identify the specific tasks and resources they need access to.
+- Create a policy that grants only the necessary permissions.
+- Regularly review and update the policy to remove unnecessary permissions.
+- Use IAM groups to manage and assign policies to simplify policy management.
 
 ## What is the IAM policy “Effect” field, and what are the possible values?
 
 Answer: The “Effect” field in an IAM policy can have two values:
-— “Allow”: Grants permissions to perform specified actions.
-— “Deny”: Explicitly denies permissions, even if they are allowed in other policies. Deny statements should be used sparingly.
+
+- “Allow”: Grants permissions to perform specified actions.
+- “Deny”: Explicitly denies permissions, even if they are allowed in other policies. Deny statements should be used sparingly.
 
 ## How can you recover from a situation where you’ve locked yourself out of your AWS account due to overly restrictive IAM policies?
 
@@ -106,23 +111,23 @@ In AWS, both IAM (Identity and Access Management) policies and permissions play 
    - **Granularity:** IAM policies can be very granular, allowing you to define fine-grained access controls based on specific actions, resources, and conditions.
 
    Example IAM Policy:
-   ```json
-   {
-     "Version": "2012-10-17",
-     "Statement": [
-       {
-         "Effect": "Allow",
-         "Action": "s3:GetObject",
-         "Resource": "arn:aws:s3:::example-bucket/*"
-       },
-       {
-         "Effect": "Deny",
-         "Action": "s3:PutObject",
-         "Resource": "arn:aws:s3:::example-bucket/top-secret/*"
-       }
-     ]
-   }
-   ```
+         ```json
+         {
+           "Version": "2012-10-17",
+           "Statement": [
+             {
+               "Effect": "Allow",
+               "Action": "s3:GetObject",
+               "Resource": "arn:aws:s3:::example-bucket/*"
+             },
+             {
+               "Effect": "Deny",
+               "Action": "s3:PutObject",
+               "Resource": "arn:aws:s3:::example-bucket/top-secret/*"
+             }
+           ]
+         }
+         ```
 
 2. **Permission:**
    - **Definition:** In the context of AWS IAM, a permission refers to the explicit authorization to perform a specific action on a specific AWS resource. Permissions are granted through IAM policies.
@@ -130,6 +135,7 @@ In AWS, both IAM (Identity and Access Management) policies and permissions play 
    - **Example:** If an IAM policy allows the action "s3:GetObject" on a specific S3 bucket, then the permission granted is the ability to get (read) objects from that bucket.
 
    Example IAM Permission:
+   
    - Action: `s3:GetObject`
    - Resource: `arn:aws:s3:::example-bucket/some-object.txt`
 
