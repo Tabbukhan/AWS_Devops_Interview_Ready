@@ -11,8 +11,8 @@ Answer: EC2 offers various instance types optimized for different use cases, suc
 Answer: An AMI is a pre-configured virtual machine image that you can use to launch EC2 instances. To create a custom AMI, you typically start with an existing instance, customize it to your needs, and then create an image from that instance. Custom AMIs are useful for replicating application environments and configurations.
 
 Create the AMI:
-Navigate to the EC2 Console, select "Instances," and choose the instance you configured.
-Choose "Actions" > "Image and templates" > "Create image."
+1. Navigate to the EC2 Console, select "Instances," and choose the instance you configured.
+2. Choose "Actions" > "Image and templates" > "Create image."
 Specify the image details:
   - Image name: A unique name for your AMI.
   - Image description: A description of the AMI and its purpose.
