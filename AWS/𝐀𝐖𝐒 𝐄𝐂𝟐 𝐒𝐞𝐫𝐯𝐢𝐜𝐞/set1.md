@@ -13,6 +13,7 @@ Answer: An AMI is a pre-configured virtual machine image that you can use to lau
 Create the AMI:
 1. Navigate to the EC2 Console, select "Instances," and choose the instance you configured.
 2. Choose "Actions" > "Image and templates" > "Create image."
+   
   Specify the image details:
   - Image name: A unique name for your AMI.
   - Image description: A description of the AMI and its purpose.
