@@ -44,7 +44,7 @@ Answer: In a DevOps environment, you can automate EC2 provisioning and configura
 
 ## Explain the concept of EC2 instance metadata and user data.
 
-## Answer:
+Answer:
 
 - EC2 Instance Metadata: EC2 instances have metadata that provides information about the instance, such as instance ID, public IP address, and IAM role. This metadata can be accessed from within the instance.
 - User Data: User data is a script or data that can be passed to an EC2 instance during launch. It is often used to perform instance-specific configuration and customization.
