@@ -57,8 +57,9 @@ Answer: ENIs are virtual network interfaces that can be attached to instances in
 ## What is the difference between a VPC Security Group and Network ACL, and how do they complement each other in securing a VPC?
 
 Answer:
-— VPC Security Group: Security Groups are stateful and operate at the instance level. They control inbound and outbound traffic based on user-defined rules and can be attached to instances. They are used for fine-grained control over traffic to and from instances.
-— Network ACL: Network ACLs are stateless and operate at the subnet level. They use rules to allow or deny traffic to subnets. They provide an additional layer of security and can be used in combination with Security Groups to create a defense-in-depth strategy.
+
+- VPC Security Group: Security Groups are stateful and operate at the instance level. They control inbound and outbound traffic based on user-defined rules and can be attached to instances. They are used for fine-grained control over traffic to and from instances.
+- Network ACL: Network ACLs are stateless and operate at the subnet level. They use rules to allow or deny traffic to subnets. They provide an additional layer of security and can be used in combination with Security Groups to create a defense-in-depth strategy.
 
 ## Explain the use of AWS VPC Flow Logs in network monitoring and analysis. What types of data do they capture?
 
@@ -79,9 +80,10 @@ Answer: You can ensure secure and efficient communication by using VPN connectio
 ## What are the best practices for designing and optimizing VPC architectures for high availability, security, and scalability?
 
 Answer: Best practices include:
-— Using multiple Availability Zones for redundancy.
-— Segmenting networks into private and public subnets.
-— Implementing Security Groups and Network ACLs for security.
-— Planning for scalable IP address ranges.
-— Utilizing VPC peering, Direct Connect, and Transit Gateway as needed.
-— Monitoring VPC resources with VPC Flow Logs and CloudWatch.
+
+- Using multiple Availability Zones for redundancy.
+- Segmenting networks into private and public subnets.
+- Implementing Security Groups and Network ACLs for security.
+- Planning for scalable IP address ranges.
+- Utilizing VPC peering, Direct Connect, and Transit Gateway as needed.
+- Monitoring VPC resources with VPC Flow Logs and CloudWatch.
