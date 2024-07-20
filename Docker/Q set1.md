@@ -26,7 +26,7 @@ Docker is a platform and a set of tools that allows developers to develop, packa
    - Docker Images are composed of layers, making them lightweight and easy to distribute.
 
 5. **Docker Containers**:
-   - Docker Containers are instances of Docker Images.
+   - Docker Containers are running instances of Docker Images.
    - They are lightweight, isolated environments that run applications.
    - Each container is created from an image and has its file system, processes, and network stack.
    - Containers can be started, stopped, deleted, and moved between different environments.
