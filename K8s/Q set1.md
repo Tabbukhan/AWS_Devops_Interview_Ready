@@ -135,7 +135,7 @@ In Kubernetes, affinity is a concept used to influence the scheduling of pods on
 **Taints and Tolerations in Kubernetes:**
 Taints and tolerations are mechanisms in Kubernetes that help control which pods can be scheduled on which nodes. A taint is a property of a node that repels certain pods, and a toleration is a pod's ability to accept (or tolerate) the taint and still be scheduled on the node. This is useful for scenarios where certain nodes in a cluster have special considerations or requirements, and you want to ensure that only specific pods are scheduled on those nodes. For example, you might taint nodes with specialized hardware, and only pods with corresponding tolerations will be scheduled on those nodes.
 
-## Can i shedule Pod in master?
+## Can i schedule Pod in master?
 In Kubernetes, it's generally not recommended to schedule regular application Pods on the master nodes. Master nodes are a critical part of the control plane and are responsible for managing the overall cluster. They run essential components such as the API server, etcd, controller manager, and scheduler, which are vital for the functioning and control of the cluster.
 
 ## what is minions in k8s node?
