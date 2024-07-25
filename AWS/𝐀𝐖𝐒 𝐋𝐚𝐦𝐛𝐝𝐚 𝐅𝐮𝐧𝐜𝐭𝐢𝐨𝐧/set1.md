@@ -47,8 +47,9 @@ Answer: AWS Step Functions allow you to build serverless workflows by coordinati
 ## How do you ensure the security of Lambda functions, and what are best practices for securing function execution, data, and dependencies?
 
 Answer: Best practices for securing Lambda functions include:
-— Applying least privilege IAM policies.
-— Securing function code and dependencies.
-— Encrypting data at rest and in transit.
-— Implementing environment variables for sensitive information.
-— Regularly updating and monitoring functions for security vulnerabilities.
+
+- Applying least privilege IAM policies.
+- Securing function code and dependencies.
+- Encrypting data at rest and in transit.
+- Implementing environment variables for sensitive information.
+- Regularly updating and monitoring functions for security vulnerabilities.
