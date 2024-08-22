@@ -50,3 +50,9 @@ Answer: AWS CloudFormation drift detection allows you to detect and identify dif
 Answer: You can create and manage a stack using the `aws cloudformation` commands. An example command to create a stack:
 
 aws cloudformation create-stack — stack-name MyStack — template-body file://my-template.yaml
+
+
+
+AWS DOCS definition: 
+
+AWS CloudFormation gives you an easy way to model a collection of related AWS and third-party resources, provision them quickly and consistently, and manage them throughout their lifecycles, by treating infrastructure as code. A CloudFormation template describes your desired resources and their dependencies so you can launch and configure them together as a stack. You can use a template to create, update, and delete an entire stack as a single unit, as often as you need to, instead of managing resources individually. You can manage and provision stacks across multiple AWS accounts and AWS Regions.
